@@ -1,3 +1,4 @@
+// Déclaration de la classe menu
 #ifndef menu_h
 #define menu_h
 
@@ -7,6 +8,9 @@ using namespace std;
 using namespace sf;
 
 class Menu {
+private:
+	int selected;
+	Font font;
 public :
 	Text menuprincipal[3];
 	Menu(float width, float height);
@@ -14,13 +18,7 @@ public :
 	void MoveUp();
 	void MoveDown();
 	void setSelected(int n);
-	int pressed() {
-		return selected;
-	}
+	int pressed() {return selected;}
 	~Menu();
-
-private:
-	int selected;
-	Font font;
 };
 #endif

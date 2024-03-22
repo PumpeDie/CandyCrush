@@ -1,10 +1,13 @@
+// Importation des fichiers
 #include <SFML/Graphics.hpp>
 #include <iostream>
 #include "menu.h"
 
+// Initialisation des variables
 using namespace std;
 using namespace sf;
 
+// Fonction main
 int main() {
     RenderWindow window(VideoMode(1920, 1080), "Game");
     Menu menu(1920, 1080);

@@ -1,12 +1,15 @@
+// Importation des fichiers
 #include <iostream>
 #include "menu.h"
 #include <SFML/Graphics.hpp>
 
+// Initialisation des variables
 using namespace std;
 using namespace sf;
 
+// Fonctions du menu principal
 Menu::Menu(float width, float height) {
-	font.loadFromFile("assets/Gatrich.otf");
+	font.loadFromFile("assets/Gatrich.otf");							// Importation de la police d'écriture
 
 	menuprincipal[0].setFont(font);
 	menuprincipal[0].setFillColor(Color{ 255, 204, 0 });
@@ -41,7 +44,7 @@ void Menu::draw(RenderWindow& window) {
 }
 
 void Menu::MoveDown() {
-	if (selected + 1 <= 3) { // Pas quitter
+	if (selected + 1 <= 3) { 											// Pas quitter
 		menuprincipal[selected].setFillColor(Color::White);
 		selected++;
 		if (selected == 3)
@@ -51,7 +54,7 @@ void Menu::MoveDown() {
 }
 
 void Menu::MoveUp() {
-	if (selected - 1 >= -1) { // Pas jouer
+	if (selected - 1 >= -1) { 											// Pas jouer
 		menuprincipal[selected].setFillColor(Color::White);
 		selected--;
 		if (selected == -1)
