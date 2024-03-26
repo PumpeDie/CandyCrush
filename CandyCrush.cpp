@@ -60,7 +60,7 @@ int main() {
             break;
         }
         if (pagenum == 0) {
-
+            break;
         }
     }
     return 0;
