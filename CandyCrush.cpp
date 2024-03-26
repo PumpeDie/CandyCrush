@@ -28,8 +28,8 @@ int main() {
         if (pagenum == 1000) {
             while (window.isOpen()) {
             Event event;
-            while (window.pollEvent(event)) 
-                if (event.type == Event::Closed) {
+            while (window.pollEvent(event)) {
+                if (event.type == Event::Closed) 
                     pagenum = -1;
                 if (event.type == Event::KeyPressed) {
                     if (event.key.code == Keyboard::Up)
