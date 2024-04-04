@@ -21,13 +21,16 @@ int pagenum = 1000;
 
 // Fonction main
 int main() {
-    RenderWindow window(VideoMode(1920, 1080), "Game");
+    RenderWindow window(VideoMode(1920, 1080), "CandyCrush");
     Menu menu(1920, 1080);
 
+    // Boucle du jeu
     while (true) {
         if (pagenum == 1000) {
             while (window.isOpen()) {
             Event event;
+
+            // Boucle des évènements 
             while (window.pollEvent(event)) {
                 if (event.type == Event::Closed) 
                     pagenum = -1;
@@ -48,11 +51,13 @@ int main() {
                     }
                 }
             }
-            window.clear();
+
+            // Rendu
+            window.clear();                                     // Nettoie le frame précédent
             if (pagenum != 1000)
                 break;
             menu.draw(window);
-            window.display();
+            window.display();                                   // Affichage
             }
         }
         if (pagenum == -1) {
@@ -63,5 +68,7 @@ int main() {
             break;
         }
     }
+
+    // Fin de l'application
     return 0;
 }
