@@ -1,11 +1,5 @@
 // Importation des fichiers
-#include <iostream>
 #include "menu.h"
-#include <SFML/Graphics.hpp>
-
-// Initialisation des variables
-using namespace std;
-using namespace sf;
 
 // Fonctions du menu principal
 Menu::Menu(float width, float height) {

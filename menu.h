@@ -2,7 +2,10 @@
 #ifndef menu_h
 #define menu_h
 
+// Importation fichiers SFML nécessaire 
 #include <SFML/Graphics.hpp>
+#include <SFML/System.hpp>
+#include <SFML/Window.hpp>
 
 using namespace std;
 using namespace sf;

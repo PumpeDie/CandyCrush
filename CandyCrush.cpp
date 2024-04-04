@@ -1,5 +1,4 @@
 // Importation des fichiers
-#include <SFML/Graphics.hpp>
 #include <iostream>
 #include "menu.h"
 
