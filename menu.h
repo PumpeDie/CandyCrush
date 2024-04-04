@@ -9,8 +9,8 @@ using namespace sf;
 
 class Menu {
 private:
-	int selected;
-	Font font;
+	int selected_;
+	Font font_;
 public :
 	Text menuprincipal[3];
 	Menu(float width, float height);
@@ -18,7 +18,7 @@ public :
 	void MoveUp();
 	void MoveDown();
 	void setSelected(int n);
-	int pressed() {return selected;}
+	int pressed() {return selected_;}
 	~Menu();
 };
 #endif
