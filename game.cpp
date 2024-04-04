@@ -7,7 +7,8 @@ void Game::initVariables() {
 }
 
 void Game::initWindow() {
-    videoMode.getDesktopMode;
+    videoMode.width = 1920;
+    videoMode.height = 1080;
     window = new sf::RenderWindow(videoMode, "CandyCrush");
 }
 
@@ -46,5 +47,6 @@ void Game::update() {
 }
 
 void Game::render() {
-    
+    window->clear(sf::Color::Blue);
+    window->display();
 }

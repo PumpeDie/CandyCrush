@@ -3,10 +3,6 @@
 #include "game.h"
 #include "menu.h"
 
-// Initialisation des variables
-using namespace std;
-using namespace sf;
-
 // Fonction main
 int main() {
     // Initialisation moteur du jeu

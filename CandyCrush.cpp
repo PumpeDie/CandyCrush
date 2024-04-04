@@ -1,5 +1,6 @@
 // Importation des fichiers
 #include <iostream>
+#include "game.h"
 #include "menu.h"
 
 // Initialisation des variables
@@ -19,7 +20,8 @@ int pagenum = 1000;
 ********************************/
 
 // Fonction main
-int main() {
+/* int main() {
+    // Initialisation moteur de jeu
     RenderWindow window(VideoMode(1920, 1080), "CandyCrush");
     Menu menu(1920, 1080);
 
@@ -71,3 +73,4 @@ int main() {
     // Fin de l'application
     return 0;
 }
+*/

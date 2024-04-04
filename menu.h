@@ -15,13 +15,16 @@ private:
 	int selected_;
 	Font font_;
 public :
-	Text menuprincipal[3];
+	// Constructeurs et Destructeurs
 	Menu(float width, float height);
+	~Menu();
+
+	// Fonctions
+	Text menuprincipal[3];
 	void draw(RenderWindow& windows);
 	void MoveUp();
 	void MoveDown();
 	void setSelected(int n);
 	int pressed() {return selected_;}
-	~Menu();
 };
 #endif
